@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="JAKA-Lumi-urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-6.72656670896998E-06 0.0437412928958953 0.0707957165782662"
+        rpy="0 0 0" />
+      <mass
+        value="118.41976746259" />
+      <inertia
+        ixx="3.11385865768605"
+        ixy="-0.000267480262460767"
+        ixz="-0.000240262024026112"
+        iyy="3.13781428625339"
+        iyz="0.0591887402872552"
+        izz="4.06021684499752" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel-r">
+    <inertial>
+      <origin
+        xyz="0 0 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.941042738950082" />
+      <inertia
+        ixx="0.00170499901767243"
+        ixy="-2.08809742975953E-50"
+        ixz="7.9632295469293E-35"
+        iyy="0.00170499901767243"
+        iyz="1.70860751235549E-36"
+        izz="0.00311129672944551" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/wheel-r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/wheel-r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w-r"
+    type="continuous">
+    <origin
+      xyz="-0.1793 0.050006 -0.2071"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel-r" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel-l">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 0 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.941042738950082" />
+      <inertia
+        ixx="0.00170499901767243"
+        ixy="1.01145213659837E-35"
+        ixz="7.9632295469293E-35"
+        iyy="0.00170499901767243"
+        iyz="-2.35098870164458E-35"
+        izz="0.00311129672944551" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/wheel-l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/wheel-l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="w-l"
+    type="continuous">
+    <origin
+      xyz="0.1793 0.050006 -0.2071"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel-l" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link-1">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -6.93889390390723E-18 -0.1505"
+        rpy="0 0 0" />
+      <mass
+        value="14.2031875107693" />
+      <inertia
+        ixx="0.252891304426124"
+        ixy="1.05709932381576E-50"
+        ixz="2.19550939928315E-18"
+        iyy="0.252891304426124"
+        iyz="-3.76712913961171E-34"
+        izz="0.0264250303637862" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-1"
+    type="prismatic">
+    <origin
+      xyz="0 0 0.565"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link-1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.4"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-2">
+    <inertial>
+      <origin
+        xyz="0.00277762398406306 1.0569934323891E-05 0.148912659397122"
+        rpy="0 0 0" />
+      <mass
+        value="4.71435348627607" />
+      <inertia
+        ixx="0.0484597647638373"
+        ixy="-3.91959983211919E-06"
+        ixz="0.000172323215577248"
+        iyy="0.0545173804209174"
+        iyz="3.92409960207935E-06"
+        izz="0.0148484208019365" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0745"
+      rpy="0 0 3.1416" />
+    <parent
+      link="link-1" />
+    <child
+      link="link-2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.7925"
+      upper="2.7925"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-3">
+    <inertial>
+      <origin
+        xyz="-0.00254602221427636 1.29838654758241E-08 0.0487080488190526"
+        rpy="0 0 0" />
+      <mass
+        value="1.2679984054123" />
+      <inertia
+        ixx="0.00113364918039248"
+        ixy="-8.90052173351221E-10"
+        ixz="1.06284029103098E-05"
+        iyy="0.00139294470935827"
+        iyz="1.94125318779449E-09"
+        izz="0.00124029626232309" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.3385"
+      rpy="0 0 3.1416" />
+    <parent
+      link="link-2" />
+    <child
+      link="link-3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1415"
+      upper="3.1415"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-4">
+    <inertial>
+      <origin
+        xyz="-0.0651537616096969 -0.0047760713882394 -0.00258855966774546"
+        rpy="0 0 0" />
+      <mass
+        value="0.860242385957563" />
+      <inertia
+        ixx="0.00588612964537561"
+        ixy="-5.30092183698953E-05"
+        ixz="-1.39111603141453E-05"
+        iyy="0.0055256436939544"
+        iyz="2.29674090186982E-05"
+        izz="0.00406175865735984" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-4"
+    type="revolute">
+    <origin
+      xyz="0 0 0.052"
+      rpy="0 1.5708 0" />
+    <parent
+      link="link-3" />
+    <child
+      link="link-4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.0872"
+      upper="0.6108"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-a1">
+    <inertial>
+      <origin
+        xyz="-1.99985110049816E-06 0.0134079971471796 0.0943686061195929"
+        rpy="0 0 0" />
+      <mass
+        value="1.3536341277161" />
+      <inertia
+        ixx="0.0055042100996421"
+        ixy="9.79122039149874E-08"
+        ixz="2.49435588749462E-08"
+        iyy="0.00543503119641919"
+        iyz="-0.000690462717635367"
+        izz="0.00167462250691424" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-a1"
+    type="revolute">
+    <origin
+      xyz="0.104 0 0.069"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link-2" />
+    <child
+      link="link-a1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2831"
+      upper="6.2831"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-a2">
+    <inertial>
+      <origin
+        xyz="0.0906054914702124 -2.34087619954693E-06 -0.00609973694238419"
+        rpy="0 0 0" />
+      <mass
+        value="1.13724805648928" />
+      <inertia
+        ixx="0.00215007918145803"
+        ixy="8.38365248894735E-07"
+        ixz="0.00254380308857539"
+        iyy="0.00820239284652689"
+        iyz="-4.49878288647161E-07"
+        izz="0.00725299239762975" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-a2"
+    type="revolute">
+    <origin
+      xyz="0 -0.0165 0.156"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link-a1" />
+    <child
+      link="link-a2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.1816"
+      upper="2.1816"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-a3">
+    <inertial>
+      <origin
+        xyz="0.0420860444026757 2.8358529791106E-07 0.0309278894474614"
+        rpy="0 0 0" />
+      <mass
+        value="0.812747987651568" />
+      <inertia
+        ixx="0.000704665344925642"
+        ixy="-8.97639837698972E-09"
+        ixz="0.000222641185546588"
+        iyy="0.00221943524868455"
+        iyz="1.40089393785369E-08"
+        izz="0.0021228407222349" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-a3"
+    type="revolute">
+    <origin
+      xyz="0.21 0 -0.029"
+      rpy="0 0 0" />
+    <parent
+      link="link-a2" />
+    <child
+      link="link-a3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.2689"
+      upper="2.2689"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-a4">
+    <inertial>
+      <origin
+        xyz="5.23366801852276E-06 -0.0259459118663939 0.0452714478645442"
+        rpy="0 0 0" />
+      <mass
+        value="0.308940957487223" />
+      <inertia
+        ixx="0.00048573730060238"
+        ixy="1.5080638573957E-08"
+        ixz="2.18662477905864E-08"
+        iyy="0.000466354807322248"
+        iyz="0.000110728918907802"
+        izz="0.000234923372387531" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-a4"
+    type="revolute">
+    <origin
+      xyz="0.1303 0 0.0185"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="link-a3" />
+    <child
+      link="link-a4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2831"
+      upper="6.2831"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-a5">
+    <inertial>
+      <origin
+        xyz="-0.0445527740988919 8.72540814711442E-06 0.0283178075044235"
+        rpy="0 0 0" />
+      <mass
+        value="0.691485869684423" />
+      <inertia
+        ixx="0.000535872191179119"
+        ixy="-1.66789455734827E-07"
+        ixz="-0.000165180739103799"
+        iyy="0.00167662015586034"
+        iyz="4.52845875519478E-08"
+        izz="0.00160760240278284" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-a5"
+    type="revolute">
+    <origin
+      xyz="0 -0.01805 0.0802"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="link-a4" />
+    <child
+      link="link-a5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.0943"
+      upper="2.0943"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-a6">
+    <inertial>
+      <origin
+        xyz="3.24059162117862E-05 -2.59128758313618E-05 0.0157071301866494"
+        rpy="0 0 0" />
+      <mass
+        value="0.147762214293586" />
+      <inertia
+        ixx="6.82806654260406E-05"
+        ixy="-1.88579213356931E-07"
+        ixz="1.03022750296885E-07"
+        iyy="6.73993556738904E-05"
+        iyz="4.77520867536062E-08"
+        izz="0.000105059848809307" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-a6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-a6"
+    type="revolute">
+    <origin
+      xyz="-0.1233 0 0.01805"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="link-a5" />
+    <child
+      link="link-a6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2831"
+      upper="6.2831"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-at">
+    <inertial>
+      <origin
+        xyz="0 -6.93889390390723E-18 -0.001"
+        rpy="0 0 0" />
+      <mass
+        value="0.00155862265526224" />
+      <inertia
+        ixx="9.71784989903346E-08"
+        ixy="-1.09121277893181E-40"
+        ixz="-2.82308475359693E-24"
+        iyy="9.71784989903346E-08"
+        iyz="2.4437407093716E-25"
+        izz="1.93317916210494E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-at.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://JAKA-Lumi-urdf/meshes/link-at.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-at"
+    type="fixed">
+    <origin
+      xyz="0 0 0.036"
+      rpy="0 0 0" />
+    <parent
+      link="link-a6" />
+    <child
+      link="link-at" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
