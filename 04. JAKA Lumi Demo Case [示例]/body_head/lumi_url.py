@@ -1,5 +1,5 @@
-# API_URL = "http://10.5.5.100:5000/api/extaxis"
-API_URL = "http://localhost:5000/api/extaxis"
+API_URL = "http://192.168.10.90:5000/api/extaxis"
+# API_URL = "http://localhost:5000/api/extaxis"
 
 LUMI_ENABLE_URL = API_URL + "/enable"
 LUMI_RESET_URL = API_URL + "/reset"
